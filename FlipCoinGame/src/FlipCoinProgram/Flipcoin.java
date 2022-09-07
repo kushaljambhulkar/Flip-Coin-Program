@@ -1,6 +1,6 @@
 package FlipCoinProgram;
 
-import java.util.Utility;
+import java.util.*;
 
 
 public class Flipcoin {
@@ -10,11 +10,11 @@ public class Flipcoin {
 		//Initialization
 		int n, h_cnt = 0, t_cnt = 0;
 		double heads, tails;
-		Utility u = new Utility();
+		Scanner sc = new Scanner(System.in);
 		
 		//Input Data
 		System.out.println("Enter no. of times you want to flip the coin: ");
-		n = u.inputInteger();
+		n = sc.nextInt();
 		
 		//Computation
 		for (int j = 0; j < n; j++)
